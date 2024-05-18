@@ -127,5 +127,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.UserChat'
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
+
+LOGIN_REDIRECT_URL = 'users:homepage'
+LOGOUT_REDIRECT_URL = 'users:login'
+LOGIN_URL = 'users:login'
